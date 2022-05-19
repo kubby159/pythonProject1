@@ -1,16 +1,14 @@
-# 🚨 Don't change the code below 👇
-student_scores = input("Input a list of student scores ").split()
-for n in range(0, len(student_scores)):
-  student_scores[n] = int(student_scores[n])
-print(student_scores)
-# 🚨 Don't change the code above 👆
-
 #Write your code below this row 👇
 
-max_score = 0;
 
-for n in student_scores:
-	if n > max_score:
-		max_score = n
+for x in range(1,101):
+	if x % 3 == 0 and x % 5 == 0:
+		print('FizzBuzz')
+	elif x % 3 == 0 :
+		print('Fizz')
+	elif x % 5 == 0:
+		print('Buzz')
+	else:
+		print(x)
 
-print(max_score)
+
