@@ -34,7 +34,4 @@ print(password)
 final_password = ''
 list_password = list(password)
 random.shuffle(list_password)
-for x in range(0, len(list_password)):
-    final_password+= list_password[x]
-
-print(final_password)
+print(''.join(list_password))
