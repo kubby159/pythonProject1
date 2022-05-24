@@ -13,13 +13,18 @@ word_list = ["aardvark", "baboon", "camel"]
 
 # 1
 
+result = []
 chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
+for x in range(word_length ):
+    result.append('_')
 
-for x in chosen_word:
-    guess = input("Guess a letter: ").lower()
-    if guess in chosen_word:
-        print("해당 알파벳은 포함되어있습니다.")
-    else:
-        print("해당 알파벳은 포함되어 있지 않습니다.")
+guess = input("Guess a letter: ").lower()
 
+for x in range(word_length):
+    letter = chosen_word[x]
+    if letter == guess:
+        result[x] = guess
+
+print(result)
 
